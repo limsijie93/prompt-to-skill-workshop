@@ -2,6 +2,8 @@
 
 Fictional, for training use only.
 
+**Context:** you are the Technical Program Manager (TPM) on a learning-content team at a training provider. The team builds courses that help working professionals make the transition into AI. This roadmap is for one of those programmes: **AI for People Managers**, for managers who need to lead teams that now work with AI tools.
+
 **Goal:** launch a 1-day corporate workshop, "AI for People Managers", prove it with a pilot, then scale it.
 
 | Phase | Outcome (and deadline) | Epics |
