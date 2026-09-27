@@ -7,7 +7,7 @@ Short, hands-on lessons that show professionals how to turn a prompt they keep r
 | Lesson | Length | Learners | Skills | Start here |
 |---|---|---|---|---|
 | [01 · From Prompt to Skill](lessons/01-prompt-to-skill) | 10 min | Vendor coordinators and course owners | `analyzing-course-feedback`, `comparing-vendor-quotes` | [run sheet](lessons/01-prompt-to-skill/run-sheet.md) |
-| [02 · Brief to Backlog](lessons/02-brief-to-backlog) | 5 min | TPMs, project leads and coordinators | `breaking-down-projects-for-jira` | [run sheet](lessons/02-brief-to-backlog/run-sheet.md) |
+| [02 · Brief to Backlog](lessons/02-brief-to-backlog) | 10 min | Course TPMs, project leads and coordinators | `clarifying-roadmap-asks`, `breaking-down-projects-for-jira` | [run sheet](lessons/02-brief-to-backlog/run-sheet.md) |
 
 Both lessons follow **I do → We do → You do**: a live demo of the skill, a short practice activity, then learners build their own.
 
@@ -59,7 +59,7 @@ description: What it does. Use when ...  # the trigger: the only part Claude rea
 
 ## Naming convention
 
-Skill names use **lowercase, hyphens and a verb in -ing form** that says what the skill does (`analyzing-course-feedback`, `breaking-down-projects-for-jira`). The name must match its folder.
+Skill names use **lowercase, hyphens and a verb in -ing form** that says what the skill does (`analyzing-course-feedback`, `clarifying-roadmap-asks`). The name must match its folder.
 
 ## Further reading
 
