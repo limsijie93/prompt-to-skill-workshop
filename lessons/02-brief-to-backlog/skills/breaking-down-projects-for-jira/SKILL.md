@@ -1,6 +1,6 @@
 ---
 name: breaking-down-projects-for-jira
-description: Works from a roadmap down to Jira-ready work. Summarises the roadmap, breaks one chosen epic into user stories with acceptance criteria and three-point estimates (optimistic, most likely, pessimistic), checks the critical path against the deadline, flags top risks, sorts ad-hoc requests against the roadmap, and outputs a CSV for Jira import. Use when the user shares a roadmap, project brief or epic and wants user stories, Jira tickets, estimates, a timeline, or help deciding whether a request belongs in the backlog.
+description: Works from a roadmap down to Jira-ready work. Summarises the roadmap, breaks one chosen epic into user stories with acceptance criteria and three-point estimates (optimistic, most likely, pessimistic), checks the critical path against the deadline, flags top risks, and outputs a CSV for Jira import. Use when the user shares a roadmap, project brief or epic and wants it broken into user stories, Jira tickets, estimates or a timeline. For deciding whether a stakeholder's ask fits the roadmap, use clarifying-roadmap-asks first.
 ---
 
 # Breaking down projects for Jira
@@ -17,10 +17,7 @@ Work from the top down: **roadmap outcome → one epic → user stories → Jira
 6. Name **dependencies** between stories and external waits (approvals, reviews, vendors, people's availability).
 7. **Critical path and timeline check:** find the longest chain of dependent stories (the critical path), add up its expected days plus holidays and waits, and compare it with the epic's deadline. Say plainly whether it fits, is at risk, or does not fit.
 8. **Top risks:** the 3 risks most likely to move the deadline, each with likelihood and impact (High / Medium / Low), a response and an owner role.
-9. **Sort incoming requests.** If the user shares ad-hoc requests, or the input mentions extra asks, decide for each one:
-   - **Ticket it:** it serves the chosen epic and fits its scope. Add it as a story.
-   - **Park it:** it serves a later epic or outcome on the roadmap. Name that epic; don't ticket it now.
-   - **Push back:** it is not on the roadmap, or it changes the epic's scope. Don't ticket it; raise it at the next roadmap review with the trade-off.
+9. **Only ticket what fits.** If the input includes ad-hoc asks, ticket only those already marked **Fits now** for this epic (for example by the `clarifying-roadmap-asks` skill). List any other ask under **Not ticketed** with one line on why, and suggest checking it against the roadmap first.
 
 ## Estimate key
 
@@ -53,8 +50,8 @@ Critical path and timeline check
 Top risks
 | Risk | Likelihood | Impact | Response | Owner (role) |
 
-Incoming requests (only if any were shared)
-| Request | Decision (Ticket it / Park it / Push back) | Why | Roadmap link |
+Not ticketed (only if asks were shared)
+| Ask | Why not ticketed | Next step |
 
 Open questions
 - ...
@@ -68,7 +65,7 @@ Issue ID,Issue Type,Summary,Description,Parent,Original Estimate (days),Labels
 Before replying, confirm:
 
 - The chosen epic is linked to a named roadmap outcome, and every story belongs to that epic.
-- No story was created for work outside the chosen epic; other asks appear under Incoming requests as Park it or Push back.
+- No story was created for work outside the chosen epic; other asks appear under Not ticketed.
 - The Estimate key appears in plain words, and every story has an owner role, acceptance criteria, O / M / P days and its key assumption.
 - No story is longer than 5 working days (M); longer ones are split.
 - Every dependency and wait in the input appears in **Depends on** or the timeline check.
